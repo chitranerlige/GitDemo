@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-27T20:07:25 IST" name="API suite" finished-at="2026-06-27T20:07:37 IST" duration-ms="12046">
+    <groups>
+    </groups>
+    <test started-at="2026-06-27T20:07:25 IST" name="Add, Get ,Update and Delete Place Tests" finished-at="2026-06-27T20:07:37 IST" duration-ms="12046">
+      <class name="tests.AddPlaceTests">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.AddPlaceTests@45752059]" started-at="2026-06-27T20:07:25 IST" name="beforeSuite" finished-at="2026-06-27T20:07:25 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.AddPlaceTests@45752059]" started-at="2026-06-27T20:07:25 IST" name="beforeMethod" finished-at="2026-06-27T20:07:25 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.AddPlaceTests.verifyAddPlace()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAddPlace()[pri:0, instance:tests.AddPlaceTests@45752059]" started-at="2026-06-27T20:07:25 IST" name="verifyAddPlace" finished-at="2026-06-27T20:07:27 IST" duration-ms="1785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddPlace -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AddPlaceTests@45752059]" started-at="2026-06-27T20:07:27 IST" name="afterMethod" finished-at="2026-06-27T20:07:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.AddPlaceTests@45752059]" started-at="2026-06-27T20:07:37 IST" name="afterSuite" finished-at="2026-06-27T20:07:38 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- tests.AddPlaceTests -->
+      <class name="tests.DeletePlaceTests">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.DeletePlaceTests@40a4337a]" started-at="2026-06-27T20:07:34 IST" name="beforeMethod" finished-at="2026-06-27T20:07:34 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.DeletePlaceTests.verifyDeletePlace()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyDeletePlace()[pri:0, instance:tests.DeletePlaceTests@40a4337a]" started-at="2026-06-27T20:07:34 IST" name="verifyDeletePlace" finished-at="2026-06-27T20:07:37 IST" duration-ms="3435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeletePlace -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DeletePlaceTests@40a4337a]" started-at="2026-06-27T20:07:37 IST" name="afterMethod" finished-at="2026-06-27T20:07:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.DeletePlaceTests -->
+      <class name="tests.GetPlaceTests">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.GetPlaceTests@702657cc]" started-at="2026-06-27T20:07:27 IST" name="beforeMethod" finished-at="2026-06-27T20:07:27 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.GetPlaceTests.verifyGetPlace()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyGetPlace()[pri:0, instance:tests.GetPlaceTests@702657cc]" started-at="2026-06-27T20:07:27 IST" name="verifyGetPlace" finished-at="2026-06-27T20:07:30 IST" duration-ms="2311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetPlace -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.GetPlaceTests@702657cc]" started-at="2026-06-27T20:07:30 IST" name="afterMethod" finished-at="2026-06-27T20:07:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.GetPlaceTests -->
+      <class name="tests.UpdatePlaceTests">
+        <test-method signature="verifyUpdatePlace(java.lang.String,java.lang.String)[pri:0, instance:tests.UpdatePlaceTests@6a6cb05c]" started-at="2026-06-27T20:07:30 IST" name="verifyUpdatePlace" data-provider="excelData" finished-at="2026-06-27T20:07:34 IST" duration-ms="3968" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[67 block, USA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qaclick123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdatePlace -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.UpdatePlaceTests@6a6cb05c]" started-at="2026-06-27T20:07:30 IST" name="beforeMethod" finished-at="2026-06-27T20:07:30 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.UpdatePlaceTests.verifyUpdatePlace(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.UpdatePlaceTests@6a6cb05c]" started-at="2026-06-27T20:07:34 IST" name="afterMethod" finished-at="2026-06-27T20:07:34 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.UpdatePlaceTests -->
+    </test> <!-- Add, Get ,Update and Delete Place Tests -->
+  </suite> <!-- API suite -->
+</testng-results>

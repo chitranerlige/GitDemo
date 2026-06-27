@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [API suite]">
+  <test thread-count="5" name="Add, Get ,Update and Delete Place Tests(failed)">
+    <classes>
+      <class name="tests.DeletePlaceTests">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="verifyDeletePlace"/>
+        </methods>
+      </class> <!-- tests.DeletePlaceTests -->
+    </classes>
+  </test> <!-- Add, Get ,Update and Delete Place Tests(failed) -->
+</suite> <!-- Failed suite [API suite] -->

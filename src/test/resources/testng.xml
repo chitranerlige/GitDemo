@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="API suite">
+  <test name="Add, Get ,Update and Delete Place Tests">
+    <classes>
+      <class name="tests.AddPlaceTests"/>
+      <class name="tests.GetPlaceTests"/>
+      <class name="tests.UpdatePlaceTests"/>
+      <class name="tests.DeletePlaceTests"/>
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
