@@ -1,45 +1,54 @@
 name: Automation Regression Suite
 
-# 1. Define when the pipeline runs (Triggers)
 on:
   push:
-    branches: [ "main", "master" ]  # Runs every time you push code to main branch
+    branches: [ "main", "master" ]
   pull_request:
-    branches: [ "main", "master" ]  # Runs when someone opens a PR
+    branches: [ "main", "master" ]
   schedule:
-    - cron: '0 2 * * *'             # Nightly build trigger: Runs automatically every day at 2:00 AM UTC
+    - cron: '0 2 * * *'
+
+# ⚠️ CRITICAL PERMISSION ADDITION FOR DEPLOYMENT:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   test-execution:
-    runs-on: ubuntu-latest          # Spins up a fresh Linux virtual machine
+    runs-on: ubuntu-latest
 
     steps:
-    # Step 1: Checkout your repository code onto the virtual machine
     - name: Checkout Code
       uses: actions/checkout@v4.2.2
 
-    # Step 2: Set up Java Environment
     - name: Set up JDK 17
       uses: actions/setup-java@v4.3.0
       with:
         java-version: '17'
         distribution: 'temurin'
-        cache: 'maven'              # Caches dependencies so future runs are faster
+        cache: 'maven'
 
-    # Step 3: Run the Maven automation suite
     - name: Execute TestNG Tests
       run: mvn clean test
 
-    # Step 4: Save your test reports so they don't disappear when the machine shuts down
     - name: Upload Test Report Artifacts
-      if: always()                  # Ensures reports upload even if tests fail
+      if: always()
       uses: actions/upload-artifact@v4.4.3
       with:
         name: test-ng-results
         path: target/surefire-reports/
+
     - name: Upload Extent Report Artifacts
       if: always()                  
       uses: actions/upload-artifact@v4.4.3
       with:
         name: extent-test-report
-        path: reports/              # Looks directly for the project 'reports' directory
+        path: reports/              
+
+    - name: Deploy Extent Report to GitHub Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: reports/
