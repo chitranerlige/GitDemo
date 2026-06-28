@@ -28,9 +28,8 @@ public class BaseTest {
 	public void beforeSuite() {
 
 		ConfigReader.loadProperties();
-		String path = ConfigReader.getProperty("report.path");
 
-	    report = ExtentReportFactory.getInstance(path);
+	    report = ExtentReportFactory.getInstance();
 
 	}
 

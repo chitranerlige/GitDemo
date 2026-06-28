@@ -1,1237 +1,49 @@
-14:09:33.823 INFO  listeners.TestListeners -Test suite started Default test
-14:09:33.870 INFO  listeners.TestListeners -Test started verifyAddPlace
-14:09:35.889 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-14:09:35.918 INFO  listeners.TestListeners -Test suite finished Default test
-14:12:27.789 INFO  listeners.TestListeners -Test suite started Default test
-14:12:27.827 INFO  listeners.TestListeners -Test started verifyAddPlace
-14:12:29.843 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-14:12:29.870 INFO  listeners.TestListeners -Test suite finished Default test
-14:16:43.066 INFO  listeners.TestListeners -Test suite started Default test
-14:16:43.099 INFO  listeners.TestListeners -Test started verifyAddPlace
-14:16:45.662 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-14:16:45.691 INFO  listeners.TestListeners -Test suite finished Default test
-14:21:08.165 INFO  listeners.TestListeners -Test suite started Default test
-14:21:08.210 INFO  listeners.TestListeners -Test started verifyAddPlace
-14:21:09.388 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-14:21:09.388 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-14:21:10.145 INFO  filters.AddPlaceFiler -Status code200
-14:21:10.178 INFO  filters.AddPlaceFiler -body{
+13:10:13.038 INFO  listeners.TestListeners -Test suite started 
+13:10:13.080 INFO  listeners.TestListeners -Test started verifyAddPlace
+13:10:14.357 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+13:10:14.357 INFO  filters.ApiLoggingFilter -Body: {"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
+13:10:15.067 INFO  filters.ApiLoggingFilter -Status: 200
+13:10:15.114 INFO  filters.ApiLoggingFilter -Response: {
     "status": "OK",
-    "place_id": "f45980a9d6158542c89ed80381a0dad8",
+    "place_id": "26f15c166cfa5de2c4d8f9276e70ded5",
     "scope": "APP",
-    "reference": "5bf585afcd8870793b94575552f1d3f35bf585afcd8870793b94575552f1d3f3",
-    "id": "5bf585afcd8870793b94575552f1d3f3"
+    "reference": "8c0607d6f880856a8abaa8907d2aad1f8c0607d6f880856a8abaa8907d2aad1f",
+    "id": "8c0607d6f880856a8abaa8907d2aad1f"
 }
-14:21:10.237 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-14:21:10.271 INFO  listeners.TestListeners -Test suite finished Default test
-14:23:01.337 INFO  listeners.TestListeners -Test suite started Default test
-14:23:01.377 INFO  listeners.TestListeners -Test started verifyAddPlace
-14:23:02.465 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-14:23:02.466 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-14:23:03.176 INFO  filters.AddPlaceFiler -Status code200
-14:23:03.207 INFO  filters.AddPlaceFiler -body{
+13:10:15.174 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
+13:10:15.178 INFO  listeners.TestListeners -Test started verifyDeletePlace
+13:10:15.191 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+13:10:15.191 INFO  filters.ApiLoggingFilter -Body: {"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
+13:10:15.334 INFO  filters.ApiLoggingFilter -Status: 200
+13:10:15.336 INFO  filters.ApiLoggingFilter -Response: {
     "status": "OK",
-    "place_id": "24d28d0730dff5280eb7b733d89fc8a6",
+    "place_id": "6b0ad09a04c09c9ff408b5f6b78fefcd",
     "scope": "APP",
-    "reference": "9df79accce0b3bfed7e40b8c236380139df79accce0b3bfed7e40b8c23638013",
-    "id": "9df79accce0b3bfed7e40b8c23638013"
-}
-14:23:03.268 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-14:23:03.298 INFO  listeners.TestListeners -Test suite finished Default test
-14:24:10.237 INFO  listeners.TestListeners -Test suite started Default test
-14:24:10.278 INFO  listeners.TestListeners -Test started verifyAddPlace
-14:24:11.440 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-14:24:11.441 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-14:24:12.185 INFO  filters.AddPlaceFiler -Status code200
-14:24:12.186 INFO  filters.AddPlaceFiler -bodyio.restassured.internal.RestAssuredResponseImpl@4b97b3d2
-14:24:12.264 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-14:24:12.296 INFO  listeners.TestListeners -Test suite finished Default test
-14:25:06.417 INFO  listeners.TestListeners -Test suite started Default test
-14:25:06.450 INFO  listeners.TestListeners -Test started verifyAddPlace
-14:25:07.565 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-14:25:07.565 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-14:25:08.255 INFO  filters.AddPlaceFiler -Status code200
-14:25:08.292 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "ddf8ea9dc10bb9f3cc55c9d164b7ec3c",
-    "scope": "APP",
-    "reference": "8b85a748e82f7dfb42012b4fdbad0c588b85a748e82f7dfb42012b4fdbad0c58",
-    "id": "8b85a748e82f7dfb42012b4fdbad0c58"
-}
-14:25:08.353 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-14:25:08.382 INFO  listeners.TestListeners -Test suite finished Default test
-14:28:41.954 INFO  listeners.TestListeners -Test suite started Default test(failed)
-14:28:41.990 INFO  listeners.TestListeners -Test started verifyAddPlace
-14:28:43.000 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-14:28:43.000 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-14:28:43.782 INFO  filters.AddPlaceFiler -Status code200
-14:28:43.822 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "1c27b233c2b7bcfe88448bde12d7a90b",
-    "scope": "APP",
-    "reference": "6e40966c43dbbde4496259a5250cd1ea6e40966c43dbbde4496259a5250cd1ea",
-    "id": "6e40966c43dbbde4496259a5250cd1ea"
-}
-14:28:43.874 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-14:28:43.908 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-15:51:12.886 INFO  listeners.TestListeners -Test suite started Default test
-15:51:12.918 INFO  listeners.TestListeners -Test started verifyAddPlace
-15:51:12.929 ERROR listeners.TestListeners -Test is failed verifyAddPlace
-15:51:12.932 ERROR listeners.TestListeners -Test is failed verifyAddPlace
-15:51:12.977 INFO  listeners.TestListeners -Test suite finished Default test
-15:52:38.327 INFO  listeners.TestListeners -Test suite started Default test
-15:52:38.367 INFO  listeners.TestListeners -Test started verifyAddPlace
-15:52:38.383 ERROR listeners.TestListeners -Test is failed verifyAddPlace
-15:52:38.385 ERROR listeners.TestListeners -Test is failed verifyAddPlace
-15:52:38.440 INFO  listeners.TestListeners -Test suite finished Default test
-15:53:38.238 INFO  listeners.TestListeners -Test suite started Default test
-15:53:38.269 INFO  listeners.TestListeners -Test started verifyAddPlace
-15:53:39.483 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-15:53:39.483 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-15:53:40.355 INFO  filters.AddPlaceFiler -Status code200
-15:53:40.387 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "001fe7f0b7b79c72def16452e5ca4e47",
-    "scope": "APP",
-    "reference": "181e655620dad24f58f0a87fbcf24ce9181e655620dad24f58f0a87fbcf24ce9",
-    "id": "181e655620dad24f58f0a87fbcf24ce9"
-}
-15:53:40.440 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-15:53:40.466 INFO  listeners.TestListeners -Test suite finished Default test
-16:28:55.285 INFO  listeners.TestListeners -Test suite started Default test
-16:28:55.318 INFO  listeners.TestListeners -Test started verifyGetPlace
-16:28:56.495 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:28:56.495 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:28:57.184 INFO  filters.AddPlaceFiler -Status code200
-16:28:57.224 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "74da97da92f80cfb3600d7e4d884a04a",
-    "scope": "APP",
-    "reference": "bb68d55d59025078cce8800881dd725cbb68d55d59025078cce8800881dd725c",
-    "id": "bb68d55d59025078cce8800881dd725c"
-}
-16:28:57.290 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:28:57.290 INFO  filters.AddPlaceFiler -payloadnull
-16:28:57.415 INFO  filters.AddPlaceFiler -Status code200
-16:28:57.416 INFO  filters.AddPlaceFiler -body
-16:28:57.429 ERROR listeners.TestListeners -Test is failed verifyGetPlace
-16:28:57.499 INFO  listeners.TestListeners -Test suite finished Default test
-16:29:58.090 INFO  listeners.TestListeners -Test suite started Default test(failed)
-16:29:58.122 INFO  listeners.TestListeners -Test started verifyAddPlace
-16:29:59.095 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:29:59.095 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:29:59.733 INFO  filters.AddPlaceFiler -Status code200
-16:29:59.771 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "85945fbd6ed8e7c5dccdb1622fb59174",
-    "scope": "APP",
-    "reference": "238ba1082f67e007ced380e47b065c8e238ba1082f67e007ced380e47b065c8e",
-    "id": "238ba1082f67e007ced380e47b065c8e"
-}
-16:29:59.827 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-16:29:59.840 INFO  listeners.TestListeners -Test started verifyGetPlace
-16:29:59.842 INFO  listeners.TestListeners -Test is skipped verifyGetPlace
-16:29:59.885 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-16:32:51.047 INFO  listeners.TestListeners -Test suite started Default test(failed)
-16:32:51.075 INFO  listeners.TestListeners -Test started verifyAddPlace
-16:32:52.051 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:32:52.052 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:32:53.485 INFO  filters.AddPlaceFiler -Status code200
-16:32:53.514 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "c8073cac7762dc1f983f6756dab504b7",
-    "scope": "APP",
-    "reference": "5bd81dec7ec610bf2906cbf3d3e65e305bd81dec7ec610bf2906cbf3d3e65e30",
-    "id": "5bd81dec7ec610bf2906cbf3d3e65e30"
-}
-16:32:53.567 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-16:32:53.577 INFO  listeners.TestListeners -Test started verifyGetPlace
-16:32:53.579 INFO  listeners.TestListeners -Test is skipped verifyGetPlace
-16:32:53.610 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-16:35:20.449 INFO  listeners.TestListeners -Test suite started Default test(failed)
-16:35:20.480 INFO  listeners.TestListeners -Test started verifyAddPlace
-16:35:21.473 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:35:21.473 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:35:22.162 INFO  filters.AddPlaceFiler -Status code200
-16:35:22.191 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "fce4f97d1162e9a6b53da0c5767bdcde",
-    "scope": "APP",
-    "reference": "02fe83254af575dd8f168ae5ced86fce02fe83254af575dd8f168ae5ced86fce",
-    "id": "02fe83254af575dd8f168ae5ced86fce"
-}
-16:35:22.241 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-16:35:22.249 INFO  listeners.TestListeners -Test started verifyGetPlace
-16:35:22.251 INFO  listeners.TestListeners -Test is skipped verifyGetPlace
-16:35:22.284 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-16:37:08.682 INFO  listeners.TestListeners -Test suite started Default test(failed)
-16:37:08.712 INFO  listeners.TestListeners -Test started verifyAddPlace
-16:37:09.717 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:37:09.717 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:37:10.478 INFO  filters.AddPlaceFiler -Status code200
-16:37:10.514 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "5482fb38ee024eba79c3887d883ca306",
-    "scope": "APP",
-    "reference": "1d9eb84d53ac199c33ac997a8f9826bd1d9eb84d53ac199c33ac997a8f9826bd",
-    "id": "1d9eb84d53ac199c33ac997a8f9826bd"
-}
-16:37:10.584 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-16:37:10.595 INFO  listeners.TestListeners -Test started verifyGetPlace
-16:37:10.599 INFO  listeners.TestListeners -Test is skipped verifyGetPlace
-16:37:10.641 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-16:38:17.700 INFO  listeners.TestListeners -Test suite started Default test(failed)
-16:38:17.729 INFO  listeners.TestListeners -Test started verifyAddPlace
-16:38:18.669 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:38:18.669 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:38:19.361 INFO  filters.AddPlaceFiler -Status code200
-16:38:19.391 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "1bb15981602856ba6834939854e0003a",
-    "scope": "APP",
-    "reference": "4245fc238a6192cb7bfad9e2a70f450d4245fc238a6192cb7bfad9e2a70f450d",
-    "id": "4245fc238a6192cb7bfad9e2a70f450d"
-}
-16:38:19.442 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-16:38:19.451 INFO  listeners.TestListeners -Test started verifyGetPlace
-16:38:19.454 INFO  listeners.TestListeners -Test is skipped verifyGetPlace
-16:38:19.487 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-16:44:59.837 INFO  listeners.TestListeners -Test suite started Default test(failed)
-16:44:59.873 INFO  listeners.TestListeners -Test started verifyAddPlace
-16:45:00.922 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:45:00.922 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:45:01.585 INFO  filters.AddPlaceFiler -Status code200
-16:45:01.619 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "e251239c64e860d536b5575c7617d1a4",
-    "scope": "APP",
-    "reference": "a9b4a9488e683c5911ecb423aed7343ca9b4a9488e683c5911ecb423aed7343c",
-    "id": "a9b4a9488e683c5911ecb423aed7343c"
-}
-16:45:01.682 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-16:45:01.687 INFO  listeners.TestListeners -Test started verifyGetPlace
-16:45:01.702 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:45:01.702 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:45:01.829 INFO  filters.AddPlaceFiler -Status code200
-16:45:01.831 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "d2677c12a30f0bbabd1482757c3a4380",
-    "scope": "APP",
-    "reference": "5a578c0dd02fa9b851cc8a045e5f65905a578c0dd02fa9b851cc8a045e5f6590",
-    "id": "5a578c0dd02fa9b851cc8a045e5f6590"
-}
-16:45:01.857 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:45:01.858 INFO  filters.AddPlaceFiler -payloadnull
-16:45:04.098 INFO  filters.AddPlaceFiler -Status code200
-16:45:04.099 INFO  filters.AddPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-16:45:04.113 ERROR listeners.TestListeners -Test is failed verifyGetPlace
-16:45:04.158 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-16:47:43.884 INFO  listeners.TestListeners -Test suite started Default test(failed)
-16:47:43.914 INFO  listeners.TestListeners -Test started verifyAddPlace
-16:47:44.870 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:47:44.870 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:47:45.593 INFO  filters.AddPlaceFiler -Status code200
-16:47:45.626 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "511eac301210151909a1ecc3ab01a4e1",
-    "scope": "APP",
-    "reference": "1434b903e332144f0bbfa800d7bcd51c1434b903e332144f0bbfa800d7bcd51c",
-    "id": "1434b903e332144f0bbfa800d7bcd51c"
-}
-16:47:45.693 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-16:47:45.700 INFO  listeners.TestListeners -Test started verifyGetPlace
-16:47:45.712 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:47:45.712 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:47:45.854 INFO  filters.AddPlaceFiler -Status code200
-16:47:45.855 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "0fb6ea7d9ad44478c000a1687dfff9de",
-    "scope": "APP",
-    "reference": "ff81ac942e3f585e6a947c261e9b24a6ff81ac942e3f585e6a947c261e9b24a6",
-    "id": "ff81ac942e3f585e6a947c261e9b24a6"
-}
-16:47:45.887 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:47:45.887 INFO  filters.AddPlaceFiler -payloadnull
-16:47:47.917 INFO  filters.AddPlaceFiler -Status code200
-16:47:47.919 INFO  filters.AddPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-16:47:47.933 ERROR listeners.TestListeners -Test is failed verifyGetPlace
-16:47:47.967 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-16:49:23.603 INFO  listeners.TestListeners -Test suite started Default test(failed)
-16:49:23.639 INFO  listeners.TestListeners -Test started verifyAddPlace
-16:49:24.723 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:49:24.724 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:49:25.391 INFO  filters.AddPlaceFiler -Status code200
-16:49:25.424 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "9add2ece51ede13575940d099b770d69",
-    "scope": "APP",
-    "reference": "f2cf50a213f167a22f3f9519b63b4447f2cf50a213f167a22f3f9519b63b4447",
-    "id": "f2cf50a213f167a22f3f9519b63b4447"
-}
-16:49:25.483 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-16:49:25.489 INFO  listeners.TestListeners -Test started verifyGetPlace
-16:49:25.502 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:49:25.502 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:49:25.638 INFO  filters.AddPlaceFiler -Status code200
-16:49:25.640 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "325c19c3fd0fdd91ce26eee0470654dd",
-    "scope": "APP",
-    "reference": "7de787199719c73c789e408a2ee7a4957de787199719c73c789e408a2ee7a495",
-    "id": "7de787199719c73c789e408a2ee7a495"
-}
-16:49:25.695 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:49:25.695 INFO  filters.AddPlaceFiler -payloadnull
-16:49:27.763 INFO  filters.AddPlaceFiler -Status code200
-16:49:27.764 INFO  filters.AddPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-16:49:27.782 ERROR listeners.TestListeners -Test is failed verifyGetPlace
-16:49:27.827 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-16:50:31.566 INFO  listeners.TestListeners -Test suite started Default test(failed)
-16:50:31.592 INFO  listeners.TestListeners -Test started verifyAddPlace
-16:50:32.584 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:50:32.585 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:50:33.269 INFO  filters.AddPlaceFiler -Status code200
-16:50:33.302 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "02bbd52e79e005ec7f8e7258c26aed39",
-    "scope": "APP",
-    "reference": "2690bbad023a3c3b0c095cc858c818352690bbad023a3c3b0c095cc858c81835",
-    "id": "2690bbad023a3c3b0c095cc858c81835"
-}
-16:50:33.351 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-16:50:33.355 INFO  listeners.TestListeners -Test started verifyGetPlace
-16:50:33.366 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:50:33.366 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:50:33.498 INFO  filters.AddPlaceFiler -Status code200
-16:50:33.501 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "7d98b4feb8b338c12aa2466769d5c489",
-    "scope": "APP",
-    "reference": "0514f99b86a566619da2591625b999430514f99b86a566619da2591625b99943",
-    "id": "0514f99b86a566619da2591625b99943"
-}
-16:50:33.535 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:50:33.535 INFO  filters.AddPlaceFiler -payloadnull
-16:50:35.600 INFO  filters.AddPlaceFiler -Status code200
-16:50:35.601 INFO  filters.AddPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-16:50:35.621 ERROR listeners.TestListeners -Test is failed verifyGetPlace
-16:50:35.663 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-16:53:54.905 INFO  listeners.TestListeners -Test suite started Default test(failed)
-16:53:54.937 INFO  listeners.TestListeners -Test started verifyAddPlace
-16:53:56.000 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:53:56.000 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:53:56.665 INFO  filters.AddPlaceFiler -Status code200
-16:53:56.696 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "be9888bcb05761063d8c245da83439a5",
-    "scope": "APP",
-    "reference": "d635e917438ea392909345bee36871c9d635e917438ea392909345bee36871c9",
-    "id": "d635e917438ea392909345bee36871c9"
-}
-16:53:56.762 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-16:53:56.768 INFO  listeners.TestListeners -Test started verifyGetPlace
-16:53:56.780 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:53:56.780 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:53:57.134 INFO  filters.AddPlaceFiler -Status code200
-16:53:57.136 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "0c5ae6bd8de1c8daaeaaeebf9fe71f85",
-    "scope": "APP",
-    "reference": "a05fa0833076f966e34a55ecadf6d838a05fa0833076f966e34a55ecadf6d838",
-    "id": "a05fa0833076f966e34a55ecadf6d838"
-}
-16:53:57.158 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:53:57.158 INFO  filters.AddPlaceFiler -payloadnull
-16:54:00.739 INFO  filters.AddPlaceFiler -Status code200
-16:54:00.740 INFO  filters.AddPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-16:54:00.753 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-16:54:00.782 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-16:59:40.210 INFO  listeners.TestListeners -Test suite started Default test(failed)
-16:59:40.249 INFO  listeners.TestListeners -Test started verifyAddPlace
-16:59:41.340 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:59:41.340 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-16:59:44.122 INFO  filters.AddPlaceFiler -Status code200
-16:59:44.151 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "0f46aabb0a854a9bce4c1df0c7b407fa",
-    "scope": "APP",
-    "reference": "17bf451e51526ab618d5d96960345ec617bf451e51526ab618d5d96960345ec6",
-    "id": "17bf451e51526ab618d5d96960345ec6"
-}
-16:59:44.204 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-16:59:44.213 INFO  listeners.TestListeners -Test started verifyGetPlace
-16:59:44.221 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-16:59:44.221 INFO  filters.AddPlaceFiler -payloadnull
-16:59:48.813 INFO  filters.AddPlaceFiler -Status code200
-16:59:48.815 INFO  filters.AddPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-16:59:48.828 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-16:59:48.855 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-17:02:27.405 INFO  listeners.TestListeners -Test suite started Default test(failed)
-17:02:27.438 INFO  listeners.TestListeners -Test started verifyAddPlace
-17:02:28.411 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:02:28.411 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-17:02:29.113 INFO  filters.AddPlaceFiler -Status code200
-17:02:29.142 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "e2b46bde6265955d90f0c21af3929517",
-    "scope": "APP",
-    "reference": "1406e960ae8dfcadcffc9cd5bb8ba6a51406e960ae8dfcadcffc9cd5bb8ba6a5",
-    "id": "1406e960ae8dfcadcffc9cd5bb8ba6a5"
-}
-17:02:29.201 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-17:02:29.205 INFO  listeners.TestListeners -Test started verifyGetPlace
-17:02:29.213 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:02:29.213 INFO  filters.AddPlaceFiler -payloadnull
-17:02:31.289 INFO  filters.AddPlaceFiler -Status code200
-17:02:31.291 INFO  filters.AddPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-17:02:31.302 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-17:02:31.324 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-17:10:50.976 INFO  listeners.TestListeners -Test suite started Default test(failed)
-17:10:51.008 INFO  listeners.TestListeners -Test started verifyAddPlace
-17:10:52.182 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:10:52.182 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-17:10:52.867 INFO  filters.AddPlaceFiler -Status code200
-17:10:52.902 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "546ddd037e42a8a47b50ad5b969a01cf",
-    "scope": "APP",
-    "reference": "6300a94c9c8bf43a93f1479d646eb8726300a94c9c8bf43a93f1479d646eb872",
-    "id": "6300a94c9c8bf43a93f1479d646eb872"
-}
-17:10:52.964 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-17:10:52.970 INFO  listeners.TestListeners -Test started verifyGetPlace
-17:10:52.978 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:10:52.978 INFO  filters.AddPlaceFiler -payloadnull
-17:10:55.100 INFO  filters.AddPlaceFiler -Status code200
-17:10:55.102 INFO  filters.AddPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-17:10:55.117 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-17:10:55.151 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-17:11:23.470 INFO  listeners.TestListeners -Test suite started Default test(failed)
-17:11:23.502 INFO  listeners.TestListeners -Test started verifyAddPlace
-17:11:24.527 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:11:24.527 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-17:11:25.293 INFO  filters.AddPlaceFiler -Status code200
-17:11:25.330 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "4b057a07eaa8605aea4b87080cec4666",
-    "scope": "APP",
-    "reference": "39e1a51986d7e3c1028ecc9944400d1539e1a51986d7e3c1028ecc9944400d15",
-    "id": "39e1a51986d7e3c1028ecc9944400d15"
-}
-17:11:25.397 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-17:11:25.401 INFO  listeners.TestListeners -Test started verifyGetPlace
-17:11:25.415 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:11:27.466 INFO  filters.GetPlaceFiler -Status code200
-17:11:27.468 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-17:11:27.481 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-17:11:27.505 INFO  listeners.TestListeners -Test suite finished Default test(failed)
-17:12:20.266 INFO  listeners.TestListeners -Test suite started 
-17:12:20.292 INFO  listeners.TestListeners -Test started verifyAddPlace
-17:12:21.424 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:12:21.425 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-17:12:22.208 INFO  filters.AddPlaceFiler -Status code200
-17:12:22.238 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "3014817f8a4561fb435809e920d0fd19",
-    "scope": "APP",
-    "reference": "469a7d9d3cc47065f6894f7df1dfc13f469a7d9d3cc47065f6894f7df1dfc13f",
-    "id": "469a7d9d3cc47065f6894f7df1dfc13f"
-}
-17:12:22.299 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-17:12:22.304 INFO  listeners.TestListeners -Test started verifyGetPlace
-17:12:22.317 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:12:24.359 INFO  filters.GetPlaceFiler -Status code200
-17:12:24.362 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-17:12:24.374 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-17:12:24.404 INFO  listeners.TestListeners -Test suite finished 
-17:12:57.473 INFO  listeners.TestListeners -Test suite started 
-17:12:57.507 INFO  listeners.TestListeners -Test started verifyAddPlace
-17:12:58.539 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:12:58.539 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-17:12:59.157 INFO  filters.AddPlaceFiler -Status code200
-17:12:59.189 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "0e004de72e66b639210fc1c46efbea86",
-    "scope": "APP",
-    "reference": "6ab8cb6521994a9f976e2b12721f3f876ab8cb6521994a9f976e2b12721f3f87",
-    "id": "6ab8cb6521994a9f976e2b12721f3f87"
-}
-17:12:59.246 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-17:12:59.253 INFO  listeners.TestListeners -Test started verifyGetPlace
-17:12:59.263 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:13:01.600 INFO  filters.GetPlaceFiler -Status code200
-17:13:01.601 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-17:13:01.615 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-17:13:01.643 INFO  listeners.TestListeners -Test suite finished 
-17:15:28.455 INFO  listeners.TestListeners -Test suite started 
-17:15:28.488 INFO  listeners.TestListeners -Test started verifyAddPlace
-17:15:29.482 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:15:29.483 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-17:15:30.189 INFO  filters.AddPlaceFiler -Status code200
-17:15:30.220 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "e0f935ae907bfdf3179fd417a5208645",
-    "scope": "APP",
-    "reference": "d99f5a20b792186641fc23282db406bad99f5a20b792186641fc23282db406ba",
-    "id": "d99f5a20b792186641fc23282db406ba"
-}
-17:15:30.274 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-17:15:30.279 INFO  listeners.TestListeners -Test started verifyGetPlace
-17:15:30.292 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:15:32.337 INFO  filters.GetPlaceFiler -Status code200
-17:15:32.338 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-17:15:32.355 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-17:15:32.383 INFO  listeners.TestListeners -Test suite finished 
-17:17:10.675 INFO  listeners.TestListeners -Test suite started 
-17:17:10.721 INFO  listeners.TestListeners -Test started verifyAddPlace
-17:17:12.223 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:17:12.223 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-17:17:13.269 INFO  filters.AddPlaceFiler -Status code200
-17:17:13.335 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "3133997f808269a759ae4da9a546c993",
-    "scope": "APP",
-    "reference": "365d536dfe89a452e0abc648626e665b365d536dfe89a452e0abc648626e665b",
-    "id": "365d536dfe89a452e0abc648626e665b"
-}
-17:17:13.468 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-17:17:13.479 INFO  listeners.TestListeners -Test started verifyGetPlace
-17:17:13.504 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:17:15.690 INFO  filters.GetPlaceFiler -Status code200
-17:17:15.690 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-17:17:15.701 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-17:17:15.740 INFO  listeners.TestListeners -Test suite finished 
-17:22:05.299 INFO  listeners.TestListeners -Test suite started 
-17:22:05.328 INFO  listeners.TestListeners -Test started verifyAddPlace
-17:22:06.275 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:22:06.275 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-17:22:06.944 INFO  filters.AddPlaceFiler -Status code200
-17:22:06.973 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "36bb883f2bb66bea1dc69ed57b784e37",
-    "scope": "APP",
-    "reference": "e994ea1430f9ba0e857cadb2373a4835e994ea1430f9ba0e857cadb2373a4835",
-    "id": "e994ea1430f9ba0e857cadb2373a4835"
-}
-17:22:07.025 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-17:22:07.030 INFO  listeners.TestListeners -Test started verifyGetPlace
-17:22:07.040 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:22:09.259 INFO  filters.GetPlaceFiler -Status code200
-17:22:09.263 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-17:22:09.275 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-17:22:09.305 INFO  listeners.TestListeners -Test suite finished 
-17:24:05.821 INFO  listeners.TestListeners -Test suite started 
-17:24:05.857 INFO  listeners.TestListeners -Test started verifyAddPlace
-17:24:06.961 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:24:06.962 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-17:24:09.525 INFO  filters.AddPlaceFiler -Status code200
-17:24:09.553 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "508d38965ea21f6cae77a090d92aee26",
-    "scope": "APP",
-    "reference": "61495fb2f44a6a6466bfac3268bb487e61495fb2f44a6a6466bfac3268bb487e",
-    "id": "61495fb2f44a6a6466bfac3268bb487e"
-}
-17:24:09.607 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-17:24:09.612 INFO  listeners.TestListeners -Test started verifyGetPlace
-17:24:09.626 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:24:12.576 INFO  filters.GetPlaceFiler -Status code200
-17:24:12.577 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-17:24:12.590 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-17:24:12.617 INFO  listeners.TestListeners -Test suite finished 
-17:27:53.260 INFO  listeners.TestListeners -Test suite started 
-17:27:53.290 INFO  listeners.TestListeners -Test started verifyAddPlace
-17:27:54.298 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:27:54.298 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-17:27:54.992 INFO  filters.AddPlaceFiler -Status code200
-17:27:55.022 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "192ecd3be21ebd4ceb1fa8141d643cf0",
-    "scope": "APP",
-    "reference": "0a5d6bd32c601c42fd20c0876cffb3b10a5d6bd32c601c42fd20c0876cffb3b1",
-    "id": "0a5d6bd32c601c42fd20c0876cffb3b1"
-}
-17:27:55.077 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-17:27:55.084 INFO  listeners.TestListeners -Test started verifyGetPlace
-17:27:55.095 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-17:27:57.209 INFO  filters.GetPlaceFiler -Status code200
-17:27:57.212 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-17:27:57.224 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-17:27:57.248 INFO  listeners.TestListeners -Test suite finished 
-18:07:14.359 INFO  listeners.TestListeners -Test suite started 
-18:07:14.390 INFO  listeners.TestListeners -Test started verifyAddPlace
-18:07:15.414 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:07:15.414 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-18:07:16.068 INFO  filters.AddPlaceFiler -Status code200
-18:07:16.101 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "f1ea2212d20d88f502f75432bd57abd7",
-    "scope": "APP",
-    "reference": "88a722cf9537b81c021c8bd058c801bb88a722cf9537b81c021c8bd058c801bb",
-    "id": "88a722cf9537b81c021c8bd058c801bb"
-}
-18:07:16.161 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-18:07:16.165 INFO  listeners.TestListeners -Test started verifyGetPlace
-18:07:16.178 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:07:18.190 INFO  filters.GetPlaceFiler -Status code200
-18:07:18.192 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-18:07:18.215 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-18:07:18.219 ERROR listeners.TestListeners -Test is failed verifyUpdatePlace
-18:07:18.251 INFO  listeners.TestListeners -Test suite finished 
-18:08:14.004 INFO  listeners.TestListeners -Test suite started 
-18:08:14.034 INFO  listeners.TestListeners -Test started verifyAddPlace
-18:08:15.012 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:08:15.012 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-18:08:15.722 INFO  filters.AddPlaceFiler -Status code200
-18:08:15.754 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "3b2a8eb44c6182e7e2e12db3dbacab2a",
-    "scope": "APP",
-    "reference": "be9ca487e0a1da992765be112ac96135be9ca487e0a1da992765be112ac96135",
-    "id": "be9ca487e0a1da992765be112ac96135"
-}
-18:08:15.806 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-18:08:15.812 INFO  listeners.TestListeners -Test started verifyGetPlace
-18:08:15.825 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:08:17.901 INFO  filters.GetPlaceFiler -Status code200
-18:08:17.904 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-18:08:17.916 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-18:08:17.920 ERROR listeners.TestListeners -Test is failed verifyUpdatePlace
-18:08:17.956 INFO  listeners.TestListeners -Test suite finished 
-18:10:46.679 INFO  listeners.TestListeners -Test suite started 
-18:10:46.711 INFO  listeners.TestListeners -Test started verifyAddPlace
-18:10:47.662 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:10:47.663 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-18:10:48.335 INFO  filters.AddPlaceFiler -Status code200
-18:10:48.363 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "4c4ff369da0758ff872fd10c2e794ef2",
-    "scope": "APP",
-    "reference": "4151bffc0323b64f499b1e3c51ff7cb84151bffc0323b64f499b1e3c51ff7cb8",
-    "id": "4151bffc0323b64f499b1e3c51ff7cb8"
-}
-18:10:48.414 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-18:10:48.420 INFO  listeners.TestListeners -Test started verifyGetPlace
-18:10:48.430 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:10:50.460 INFO  filters.GetPlaceFiler -Status code200
-18:10:50.461 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-18:10:50.473 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-18:10:50.477 ERROR listeners.TestListeners -Test is failed verifyUpdatePlace
-18:10:50.503 INFO  listeners.TestListeners -Test suite finished 
-18:16:23.165 INFO  listeners.TestListeners -Test suite started 
-18:16:23.202 INFO  listeners.TestListeners -Test started verifyAddPlace
-18:16:24.418 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:16:24.418 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-18:16:25.183 INFO  filters.AddPlaceFiler -Status code200
-18:16:25.217 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "ae02a01a184fc37170795ae1809aad2e",
-    "scope": "APP",
-    "reference": "620dc68f6663d925088772eaa9dda52b620dc68f6663d925088772eaa9dda52b",
-    "id": "620dc68f6663d925088772eaa9dda52b"
-}
-18:16:25.286 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-18:16:25.293 INFO  listeners.TestListeners -Test started verifyGetPlace
-18:16:25.304 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:16:27.445 INFO  filters.GetPlaceFiler -Status code200
-18:16:27.446 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-18:16:27.465 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-18:16:28.188 INFO  listeners.TestListeners -Test started verifyUpdatePlace
-18:16:28.205 INFO  filters.UpdatePlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:16:28.206 INFO  filters.UpdatePlaceFiler -payload{"place_id":"ae02a01a184fc37170795ae1809aad2e","address":"67 block, USA","key":"qaclick123"}
-18:16:28.340 INFO  filters.UpdatePlaceFiler -Status code200
-18:16:28.341 INFO  filters.UpdatePlaceFiler -body
-18:16:28.379 ERROR listeners.TestListeners -Test is failed verifyUpdatePlace
-18:16:28.425 INFO  listeners.TestListeners -Test suite finished 
-18:18:12.700 INFO  listeners.TestListeners -Test suite started 
-18:18:12.729 INFO  listeners.TestListeners -Test started verifyAddPlace
-18:18:13.769 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:18:13.769 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-18:18:14.427 INFO  filters.AddPlaceFiler -Status code200
-18:18:14.459 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "aeb2f068a21943321ee794f7b77d5da7",
-    "scope": "APP",
-    "reference": "3be4f34770692c1ff0adbb616da52dc33be4f34770692c1ff0adbb616da52dc3",
-    "id": "3be4f34770692c1ff0adbb616da52dc3"
-}
-18:18:14.513 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-18:18:14.519 INFO  listeners.TestListeners -Test started verifyGetPlace
-18:18:14.531 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:18:17.623 INFO  filters.GetPlaceFiler -Status code200
-18:18:17.625 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-18:18:17.637 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-18:18:18.043 INFO  listeners.TestListeners -Test started verifyUpdatePlace
-18:18:18.056 INFO  filters.UpdatePlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:18:18.056 INFO  filters.UpdatePlaceFiler -payload{"place_id":"aeb2f068a21943321ee794f7b77d5da7","address":"67 block, USA","key":"qaclick123"}
-18:18:21.397 INFO  filters.UpdatePlaceFiler -Status code200
-18:18:21.398 INFO  filters.UpdatePlaceFiler -body{
-    "msg": "Address successfully updated"
-}
-18:18:21.819 ERROR listeners.TestListeners -Test is failed verifyUpdatePlace
-18:18:21.851 INFO  listeners.TestListeners -Test suite finished 
-18:19:18.854 INFO  listeners.TestListeners -Test suite started 
-18:19:18.891 INFO  listeners.TestListeners -Test started verifyAddPlace
-18:19:19.990 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:19:19.990 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-18:19:20.930 INFO  filters.AddPlaceFiler -Status code200
-18:19:20.962 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "3b59734f18784646621053236e4a571e",
-    "scope": "APP",
-    "reference": "151b73ce7766922f06a5cd5e5f72ddb1151b73ce7766922f06a5cd5e5f72ddb1",
-    "id": "151b73ce7766922f06a5cd5e5f72ddb1"
-}
-18:19:21.022 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-18:19:21.028 INFO  listeners.TestListeners -Test started verifyGetPlace
-18:19:21.041 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:19:23.176 INFO  filters.GetPlaceFiler -Status code200
-18:19:23.178 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-18:19:23.190 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-18:19:23.608 INFO  listeners.TestListeners -Test started verifyUpdatePlace
-18:19:23.620 INFO  filters.UpdatePlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:19:23.620 INFO  filters.UpdatePlaceFiler -payload{"place_id":"3b59734f18784646621053236e4a571e","address":"67 block, USA","key":"qaclick123"}
-18:19:26.676 INFO  filters.UpdatePlaceFiler -Status code200
-18:19:26.678 INFO  filters.UpdatePlaceFiler -body{
-    "msg": "Address successfully updated"
-}
-18:19:27.137 ERROR listeners.TestListeners -Test is failed verifyUpdatePlace
-18:19:27.185 INFO  listeners.TestListeners -Test suite finished 
-18:21:13.460 INFO  listeners.TestListeners -Test suite started 
-18:21:13.497 INFO  listeners.TestListeners -Test started verifyAddPlace
-18:21:14.527 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:21:14.527 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-18:21:15.181 INFO  filters.AddPlaceFiler -Status code200
-18:21:15.215 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "dd5c4c72b53592ab809a5139e2e74c13",
-    "scope": "APP",
-    "reference": "08c76d50427c4f5ed785496fdba9aee408c76d50427c4f5ed785496fdba9aee4",
-    "id": "08c76d50427c4f5ed785496fdba9aee4"
-}
-18:21:15.281 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-18:21:15.288 INFO  listeners.TestListeners -Test started verifyGetPlace
-18:21:15.301 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:21:17.385 INFO  filters.GetPlaceFiler -Status code200
-18:21:17.388 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-18:21:17.400 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-18:21:17.809 INFO  listeners.TestListeners -Test started verifyUpdatePlace
-18:21:17.824 INFO  filters.UpdatePlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:21:17.824 INFO  filters.UpdatePlaceFiler -payload{"place_id":"dd5c4c72b53592ab809a5139e2e74c13","address":"67 block, USA","key":"qaclick123"}
-18:21:20.904 INFO  filters.UpdatePlaceFiler -Status code200
-18:21:20.905 INFO  filters.UpdatePlaceFiler -body{
-    "msg": "Address successfully updated"
-}
-18:21:21.284 INFO  listeners.TestListeners -Test is successfull verifyUpdatePlace
-18:21:21.310 INFO  listeners.TestListeners -Test suite finished 
-18:31:03.894 INFO  listeners.TestListeners -Test suite started 
-18:31:03.925 INFO  listeners.TestListeners -Test started verifyAddPlace
-18:31:04.974 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:31:04.975 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-18:31:05.735 INFO  filters.AddPlaceFiler -Status code200
-18:31:05.768 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "fe9931fa5ffbab46b35ad23faeb5fb50",
-    "scope": "APP",
-    "reference": "75ac0c5017cf262ab7a8176841a1f59375ac0c5017cf262ab7a8176841a1f593",
-    "id": "75ac0c5017cf262ab7a8176841a1f593"
-}
-18:31:05.825 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-18:31:05.830 INFO  listeners.TestListeners -Test started verifyGetPlace
-18:31:05.842 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:31:08.033 INFO  filters.GetPlaceFiler -Status code200
-18:31:08.034 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-18:31:08.047 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-18:31:08.583 INFO  listeners.TestListeners -Test started verifyUpdatePlace
-18:31:08.595 INFO  filters.UpdatePlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:31:08.595 INFO  filters.UpdatePlaceFiler -payload{"place_id":"fe9931fa5ffbab46b35ad23faeb5fb50","address":"67 block, USA","key":"qaclick123"}
-18:31:11.747 INFO  filters.UpdatePlaceFiler -Status code200
-18:31:11.748 INFO  filters.UpdatePlaceFiler -body{
-    "msg": "Address successfully updated"
-}
-18:31:12.121 INFO  listeners.TestListeners -Test is successfull verifyUpdatePlace
-18:31:12.126 ERROR listeners.TestListeners -Test is failed verifyUpdatePlace
-18:31:12.156 INFO  listeners.TestListeners -Test suite finished 
-18:32:37.047 INFO  listeners.TestListeners -Test suite started 
-18:32:37.083 INFO  listeners.TestListeners -Test started verifyAddPlace
-18:32:38.030 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:32:38.030 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-18:32:38.678 INFO  filters.AddPlaceFiler -Status code200
-18:32:38.711 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "767a1726ee4e73b1d39de0f7736fe287",
-    "scope": "APP",
-    "reference": "1ed95b71066c3cb663bcf808439884321ed95b71066c3cb663bcf80843988432",
-    "id": "1ed95b71066c3cb663bcf80843988432"
-}
-18:32:38.772 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-18:32:38.777 INFO  listeners.TestListeners -Test started verifyGetPlace
-18:32:38.789 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:32:40.949 INFO  filters.GetPlaceFiler -Status code200
-18:32:40.951 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-18:32:40.964 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-18:32:41.336 INFO  listeners.TestListeners -Test started verifyUpdatePlace
-18:32:41.348 INFO  filters.UpdatePlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:32:41.348 INFO  filters.UpdatePlaceFiler -payload{"place_id":"767a1726ee4e73b1d39de0f7736fe287","address":"67 block, USA","key":"qaclick123"}
-18:32:44.760 INFO  filters.UpdatePlaceFiler -Status code200
-18:32:44.762 INFO  filters.UpdatePlaceFiler -body{
-    "msg": "Address successfully updated"
-}
-18:32:45.126 INFO  listeners.TestListeners -Test is successfull verifyUpdatePlace
-18:32:45.131 ERROR listeners.TestListeners -Test is failed verifyDeletePlace
-18:32:45.161 INFO  listeners.TestListeners -Test suite finished 
-18:34:03.848 INFO  listeners.TestListeners -Test suite started 
-18:34:03.878 INFO  listeners.TestListeners -Test started verifyAddPlace
-18:34:04.803 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:34:04.804 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-18:34:05.444 INFO  filters.AddPlaceFiler -Status code200
-18:34:05.473 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "f6293c9ad5fa7ecc494053bd81475d7e",
-    "scope": "APP",
-    "reference": "e101438a265813a7fd48369a152bb707e101438a265813a7fd48369a152bb707",
-    "id": "e101438a265813a7fd48369a152bb707"
-}
-18:34:05.531 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-18:34:05.536 INFO  listeners.TestListeners -Test started verifyGetPlace
-18:34:05.547 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:34:07.675 INFO  filters.GetPlaceFiler -Status code200
-18:34:07.676 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-18:34:07.690 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-18:34:08.119 INFO  listeners.TestListeners -Test started verifyUpdatePlace
-18:34:08.137 INFO  filters.UpdatePlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:34:08.137 INFO  filters.UpdatePlaceFiler -payload{"place_id":"f6293c9ad5fa7ecc494053bd81475d7e","address":"67 block, USA","key":"qaclick123"}
-18:34:12.518 INFO  filters.UpdatePlaceFiler -Status code200
-18:34:12.519 INFO  filters.UpdatePlaceFiler -body{
-    "msg": "Address successfully updated"
-}
-18:34:12.888 INFO  listeners.TestListeners -Test is successfull verifyUpdatePlace
-18:34:12.890 INFO  listeners.TestListeners -Test started verifyDeletePlace
-18:34:12.899 INFO  filters.DeletePlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:34:12.900 INFO  filters.DeletePlaceFiler -payload"place_id":"f6293c9ad5fa7ecc494053bd81475d7e"
-18:34:13.019 INFO  filters.DeletePlaceFiler -Status code200
-18:34:13.019 INFO  filters.DeletePlaceFiler -body
-18:34:13.025 ERROR listeners.TestListeners -Test is failed verifyDeletePlace
-18:34:13.055 INFO  listeners.TestListeners -Test suite finished 
-18:35:22.792 INFO  listeners.TestListeners -Test suite started 
-18:35:22.819 INFO  listeners.TestListeners -Test started verifyAddPlace
-18:35:23.762 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:35:23.763 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-18:35:24.418 INFO  filters.AddPlaceFiler -Status code200
-18:35:24.448 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "0e601f092c00ffb71709c50a33bd7a83",
-    "scope": "APP",
-    "reference": "69e541ce1ce5b59a24020c2fbc25192f69e541ce1ce5b59a24020c2fbc25192f",
-    "id": "69e541ce1ce5b59a24020c2fbc25192f"
-}
-18:35:24.497 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-18:35:24.502 INFO  listeners.TestListeners -Test started verifyGetPlace
-18:35:24.511 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:35:26.697 INFO  filters.GetPlaceFiler -Status code200
-18:35:26.699 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-18:35:26.712 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-18:35:27.135 INFO  listeners.TestListeners -Test started verifyUpdatePlace
-18:35:27.149 INFO  filters.UpdatePlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:35:27.149 INFO  filters.UpdatePlaceFiler -payload{"place_id":"0e601f092c00ffb71709c50a33bd7a83","address":"67 block, USA","key":"qaclick123"}
-18:35:30.307 INFO  filters.UpdatePlaceFiler -Status code200
-18:35:30.308 INFO  filters.UpdatePlaceFiler -body{
-    "msg": "Address successfully updated"
-}
-18:35:30.674 INFO  listeners.TestListeners -Test is successfull verifyUpdatePlace
-18:35:30.676 INFO  listeners.TestListeners -Test started verifyDeletePlace
-18:35:30.683 INFO  filters.DeletePlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:35:30.683 INFO  filters.DeletePlaceFiler -payload"place_id":"0e601f092c00ffb71709c50a33bd7a83"
-18:35:30.825 INFO  filters.DeletePlaceFiler -Status code200
-18:35:30.827 INFO  filters.DeletePlaceFiler -body
-18:35:30.839 ERROR listeners.TestListeners -Test is failed verifyDeletePlace
-18:35:30.877 INFO  listeners.TestListeners -Test suite finished 
-18:38:19.691 INFO  listeners.TestListeners -Test suite started 
-18:38:19.721 INFO  listeners.TestListeners -Test started verifyAddPlace
-18:38:20.664 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:38:20.665 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-18:38:21.274 INFO  filters.AddPlaceFiler -Status code200
-18:38:21.302 INFO  filters.AddPlaceFiler -body{
-    "status": "OK",
-    "place_id": "365f9aedf93e02b0a926c3fc6f75c797",
-    "scope": "APP",
-    "reference": "671daf16c3ea331df0eaf27f1925b104671daf16c3ea331df0eaf27f1925b104",
-    "id": "671daf16c3ea331df0eaf27f1925b104"
-}
-18:38:21.356 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-18:38:21.359 INFO  listeners.TestListeners -Test started verifyGetPlace
-18:38:21.369 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:38:23.500 INFO  filters.GetPlaceFiler -Status code200
-18:38:23.501 INFO  filters.GetPlaceFiler -body{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "Frontline house",
-    "phone_number": "(+91)9838933937",
-    "address": "29, side layout, cohen 09",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "French-IN"
-}
-18:38:23.514 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-18:38:23.894 INFO  listeners.TestListeners -Test started verifyUpdatePlace
-18:38:23.906 INFO  filters.UpdatePlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:38:23.906 INFO  filters.UpdatePlaceFiler -payload{"place_id":"365f9aedf93e02b0a926c3fc6f75c797","address":"67 block, USA","key":"qaclick123"}
-18:38:27.129 INFO  filters.UpdatePlaceFiler -Status code200
-18:38:27.130 INFO  filters.UpdatePlaceFiler -body{
-    "msg": "Address successfully updated"
-}
-18:38:27.505 INFO  listeners.TestListeners -Test is successfull verifyUpdatePlace
-18:38:27.508 INFO  listeners.TestListeners -Test started verifyDeletePlace
-18:38:27.518 INFO  filters.DeletePlaceFiler -Base URIhttps://rahulshettyacademy.com
-18:38:27.518 INFO  filters.DeletePlaceFiler -payload{ "place_id": "365f9aedf93e02b0a926c3fc6f75c797" }
-18:38:30.645 INFO  filters.DeletePlaceFiler -Status code200
-18:38:30.646 INFO  filters.DeletePlaceFiler -body{
+    "reference": "f35b94a9c483879eb5a7e51e612851b4f35b94a9c483879eb5a7e51e612851b4",
+    "id": "f35b94a9c483879eb5a7e51e612851b4"
+}
+13:10:15.359 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+13:10:15.359 INFO  filters.ApiLoggingFilter -Body: { "place_id": "6b0ad09a04c09c9ff408b5f6b78fefcd" }
+13:10:18.499 INFO  filters.ApiLoggingFilter -Status: 200
+13:10:18.499 INFO  filters.ApiLoggingFilter -Response: {
     "status": "OK"
 }
-18:38:30.657 INFO  listeners.TestListeners -Test is successfull verifyDeletePlace
-18:38:30.680 INFO  listeners.TestListeners -Test suite finished 
-19:20:11.041 INFO  listeners.TestListeners -Test suite started 
-19:20:11.072 INFO  listeners.TestListeners -Test started verifyGetPlace
-19:20:12.235 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-19:20:12.235 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-19:20:12.887 INFO  filters.AddPlaceFiler -Status code200
-19:20:12.920 INFO  filters.AddPlaceFiler -body{
+13:10:18.937 INFO  listeners.TestListeners -Test is successfull verifyDeletePlace
+13:10:18.937 INFO  listeners.TestListeners -Test started verifyGetPlace
+13:10:18.955 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+13:10:18.955 INFO  filters.ApiLoggingFilter -Body: {"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
+13:10:19.076 INFO  filters.ApiLoggingFilter -Status: 200
+13:10:19.076 INFO  filters.ApiLoggingFilter -Response: {
     "status": "OK",
-    "place_id": "dfc4ab35a30fa52cc736f8190ef60fea",
+    "place_id": "696598740ad5f097e63d03e8c6d00041",
     "scope": "APP",
-    "reference": "cfd241ea3fc0628e9fa87d2a04484569cfd241ea3fc0628e9fa87d2a04484569",
-    "id": "cfd241ea3fc0628e9fa87d2a04484569"
+    "reference": "35c02c7dc6ff6231759aa681032e2fdd35c02c7dc6ff6231759aa681032e2fdd",
+    "id": "35c02c7dc6ff6231759aa681032e2fdd"
 }
-19:20:12.982 INFO  filters.GetPlaceFiler -Base URIhttps://rahulshettyacademy.com
-19:20:15.028 INFO  filters.GetPlaceFiler -Status code200
-19:20:15.031 INFO  filters.GetPlaceFiler -body{
+13:10:19.102 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=696598740ad5f097e63d03e8c6d00041
+13:10:19.102 INFO  filters.ApiLoggingFilter -Body: null
+13:10:21.122 INFO  filters.ApiLoggingFilter -Status: 200
+13:10:21.125 INFO  filters.ApiLoggingFilter -Response: {
     "location": {
         "latitude": "-38.383494",
         "longitude": "33.427362"
@@ -1244,52 +56,54 @@
     "website": "http://google.com",
     "language": "French-IN"
 }
-19:20:15.055 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-19:20:15.098 INFO  listeners.TestListeners -Test suite finished 
-19:29:29.393 INFO  filters.AddPlaceFiler -Base URIhttps://rahulshettyacademy.com
-19:29:29.399 INFO  filters.AddPlaceFiler -payload{"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-19:29:30.347 INFO  filters.AddPlaceFiler -Status code200
-19:29:30.403 INFO  filters.AddPlaceFiler -body{
+13:10:21.151 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
+13:10:21.743 INFO  listeners.TestListeners -Test started verifyUpdatePlace
+13:10:21.750 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+13:10:21.750 INFO  filters.ApiLoggingFilter -Body: {"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
+13:10:21.877 INFO  filters.ApiLoggingFilter -Status: 200
+13:10:21.877 INFO  filters.ApiLoggingFilter -Response: {
     "status": "OK",
-    "place_id": "f49eeaf531887022742f569a97c0c2e9",
+    "place_id": "b7f0be5194c04881c9ebed37b8caaec1",
     "scope": "APP",
-    "reference": "cd5aaa7d72dc06e188091be386199854cd5aaa7d72dc06e188091be386199854",
-    "id": "cd5aaa7d72dc06e188091be386199854"
+    "reference": "d1c4e0408df9f4160af54dcdd592ead3d1c4e0408df9f4160af54dcdd592ead3",
+    "id": "d1c4e0408df9f4160af54dcdd592ead3"
 }
-19:29:30.489 INFO  filters.UpdatePlaceFiler -Base URIhttps://rahulshettyacademy.com
-19:29:30.489 INFO  filters.UpdatePlaceFiler -payload{"place_id":"f49eeaf531887022742f569a97c0c2e9","address":"67 block, USA","key":"qaclick123"}
-19:29:33.510 INFO  filters.UpdatePlaceFiler -Status code200
-19:29:33.512 INFO  filters.UpdatePlaceFiler -body{
+13:10:21.925 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+13:10:21.925 INFO  filters.ApiLoggingFilter -Body: {"place_id":"b7f0be5194c04881c9ebed37b8caaec1","address":"67 block, USA","key":"qaclick123"}
+13:10:24.890 INFO  filters.ApiLoggingFilter -Status: 200
+13:10:24.904 INFO  filters.ApiLoggingFilter -Response: {
     "msg": "Address successfully updated"
 }
-20:07:25.865 INFO  listeners.TestListeners -Test suite started 
-20:07:25.899 INFO  listeners.TestListeners -Test started verifyAddPlace
-20:07:26.931 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
-20:07:26.932 INFO  filters.ApiLoggingFilter -Body: {"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-20:07:27.588 INFO  filters.ApiLoggingFilter -Status: 200
-20:07:27.619 INFO  filters.ApiLoggingFilter -Response: {
+13:10:24.916 INFO  listeners.TestListeners -Test is successfull verifyUpdatePlace
+13:10:24.949 INFO  listeners.TestListeners -Test suite finished 
+13:38:48.253 INFO  listeners.TestListeners -Test suite started 
+13:38:48.287 INFO  listeners.TestListeners -Test started verifyAddPlace
+13:38:49.478 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+13:38:49.478 INFO  filters.ApiLoggingFilter -Body: {"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
+13:38:50.262 INFO  filters.ApiLoggingFilter -Status: 200
+13:38:50.296 INFO  filters.ApiLoggingFilter -Response: {
     "status": "OK",
-    "place_id": "44043a91e430bdf0ec35c201bb556f72",
+    "place_id": "1b491650ac7aa9aefce03634c347668d",
     "scope": "APP",
-    "reference": "dce93318e5d885a0352fb0daf3f56ecfdce93318e5d885a0352fb0daf3f56ecf",
-    "id": "dce93318e5d885a0352fb0daf3f56ecf"
+    "reference": "1388abe638a39c17bdaf697b4662fb7b1388abe638a39c17bdaf697b4662fb7b",
+    "id": "1388abe638a39c17bdaf697b4662fb7b"
 }
-20:07:27.686 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
-20:07:27.693 INFO  listeners.TestListeners -Test started verifyGetPlace
-20:07:27.702 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
-20:07:27.703 INFO  filters.ApiLoggingFilter -Body: {"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-20:07:27.884 INFO  filters.ApiLoggingFilter -Status: 200
-20:07:27.886 INFO  filters.ApiLoggingFilter -Response: {
+13:38:50.359 INFO  listeners.TestListeners -Test is successfull verifyAddPlace
+13:38:50.364 INFO  listeners.TestListeners -Test started verifyGetPlace
+13:38:50.377 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+13:38:50.377 INFO  filters.ApiLoggingFilter -Body: {"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
+13:38:50.508 INFO  filters.ApiLoggingFilter -Status: 200
+13:38:50.510 INFO  filters.ApiLoggingFilter -Response: {
     "status": "OK",
-    "place_id": "945475612aeeebb8f14be210b485f89d",
+    "place_id": "d556d68255b46d2678e09845ac50b490",
     "scope": "APP",
-    "reference": "3d54e8851fc3aff98e84ef61828463ee3d54e8851fc3aff98e84ef61828463ee",
-    "id": "3d54e8851fc3aff98e84ef61828463ee"
+    "reference": "9f2576fb0869d54eaa4e171e592aec3d9f2576fb0869d54eaa4e171e592aec3d",
+    "id": "9f2576fb0869d54eaa4e171e592aec3d"
 }
-20:07:27.906 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=945475612aeeebb8f14be210b485f89d
-20:07:27.907 INFO  filters.ApiLoggingFilter -Body: null
-20:07:29.984 INFO  filters.ApiLoggingFilter -Status: 200
-20:07:29.987 INFO  filters.ApiLoggingFilter -Response: {
+13:38:50.518 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=d556d68255b46d2678e09845ac50b490
+13:38:50.518 INFO  filters.ApiLoggingFilter -Body: null
+13:38:52.554 INFO  filters.ApiLoggingFilter -Status: 200
+13:38:52.555 INFO  filters.ApiLoggingFilter -Response: {
     "location": {
         "latitude": "-38.383494",
         "longitude": "33.427362"
@@ -1302,41 +116,41 @@
     "website": "http://google.com",
     "language": "French-IN"
 }
-20:07:30.005 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
-20:07:30.497 INFO  listeners.TestListeners -Test started verifyUpdatePlace
-20:07:30.507 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
-20:07:30.507 INFO  filters.ApiLoggingFilter -Body: {"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-20:07:30.637 INFO  filters.ApiLoggingFilter -Status: 200
-20:07:30.638 INFO  filters.ApiLoggingFilter -Response: {
+13:38:52.568 INFO  listeners.TestListeners -Test is successfull verifyGetPlace
+13:38:53.097 INFO  listeners.TestListeners -Test started verifyUpdatePlace
+13:38:53.105 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+13:38:53.105 INFO  filters.ApiLoggingFilter -Body: {"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
+13:38:53.368 INFO  filters.ApiLoggingFilter -Status: 200
+13:38:53.369 INFO  filters.ApiLoggingFilter -Response: {
     "status": "OK",
-    "place_id": "fe7149237a0fb0588b3410ee356d1514",
+    "place_id": "c7ad6b66461706f453e76b14d9aa6420",
     "scope": "APP",
-    "reference": "c7b5c962515d2316c1063920b5944411c7b5c962515d2316c1063920b5944411",
-    "id": "c7b5c962515d2316c1063920b5944411"
+    "reference": "769afc74d0425291d0d74f18f7673a77769afc74d0425291d0d74f18f7673a77",
+    "id": "769afc74d0425291d0d74f18f7673a77"
 }
-20:07:30.650 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
-20:07:30.650 INFO  filters.ApiLoggingFilter -Body: {"place_id":"fe7149237a0fb0588b3410ee356d1514","address":"67 block, USA","key":"qaclick123"}
-20:07:34.067 INFO  filters.ApiLoggingFilter -Status: 200
-20:07:34.068 INFO  filters.ApiLoggingFilter -Response: {
+13:38:53.382 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+13:38:53.382 INFO  filters.ApiLoggingFilter -Body: {"place_id":"c7ad6b66461706f453e76b14d9aa6420","address":"67 block, USA","key":"qaclick123"}
+13:38:56.464 INFO  filters.ApiLoggingFilter -Status: 200
+13:38:56.464 INFO  filters.ApiLoggingFilter -Response: {
     "msg": "Address successfully updated"
 }
-20:07:34.465 INFO  listeners.TestListeners -Test is successfull verifyUpdatePlace
-20:07:34.469 INFO  listeners.TestListeners -Test started verifyDeletePlace
-20:07:34.479 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
-20:07:34.479 INFO  filters.ApiLoggingFilter -Body: {"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
-20:07:34.623 INFO  filters.ApiLoggingFilter -Status: 200
-20:07:34.625 INFO  filters.ApiLoggingFilter -Response: {
+13:38:56.861 INFO  listeners.TestListeners -Test is successfull verifyUpdatePlace
+13:38:56.863 INFO  listeners.TestListeners -Test started verifyDeletePlace
+13:38:56.873 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+13:38:56.873 INFO  filters.ApiLoggingFilter -Body: {"location":{"lat":-38.383494,"lng":33.427362},"accuracy":50,"name":"Frontline house","phone_number":"(+91)9838933937","address":"29, side layout, cohen 09","types":["shoe park","shop"],"website":"http://google.com","language":"French-IN"}
+13:38:57.042 INFO  filters.ApiLoggingFilter -Status: 200
+13:38:57.043 INFO  filters.ApiLoggingFilter -Response: {
     "status": "OK",
-    "place_id": "6ac4079eb5593f4ab086e3c525965baa",
+    "place_id": "11b34ec905a6a78a2698fe13866693f0",
     "scope": "APP",
-    "reference": "bb2402210387bc077adc8069cfa6480abb2402210387bc077adc8069cfa6480a",
-    "id": "bb2402210387bc077adc8069cfa6480a"
+    "reference": "8c6fe29a88a2cf27be3ae36c5de5474d8c6fe29a88a2cf27be3ae36c5de5474d",
+    "id": "8c6fe29a88a2cf27be3ae36c5de5474d"
 }
-20:07:34.639 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
-20:07:34.640 INFO  filters.ApiLoggingFilter -Body: { "place_id": "6ac4079eb5593f4ab086e3c525965baa" }
-20:07:37.894 INFO  filters.ApiLoggingFilter -Status: 200
-20:07:37.895 INFO  filters.ApiLoggingFilter -Response: {
+13:38:57.051 INFO  filters.ApiLoggingFilter -URI: https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+13:38:57.052 INFO  filters.ApiLoggingFilter -Body: { "place_id": "11b34ec905a6a78a2698fe13866693f0" }
+13:39:00.273 INFO  filters.ApiLoggingFilter -Status: 200
+13:39:00.274 INFO  filters.ApiLoggingFilter -Response: {
     "status": "OK"
 }
-20:07:37.905 INFO  listeners.TestListeners -Test is successfull verifyDeletePlace
-20:07:37.940 INFO  listeners.TestListeners -Test suite finished 
+13:39:00.285 INFO  listeners.TestListeners -Test is successfull verifyDeletePlace
+13:39:00.316 INFO  listeners.TestListeners -Test suite finished 
