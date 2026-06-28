@@ -4,7 +4,8 @@ This project automates regression testing for core REST API endpoints using Java
 
 ##  Live Test Results
 The execution reports are updated automatically on every code change:
-**[View Live Extent Report Dashboard](https://github.io)**
+🔗 **[View Live Extent Report Dashboard](https://github.io)**
+
 
 ---
 
