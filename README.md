@@ -1,6 +1,6 @@
 #  RestAssured API Automation Framework
 
-This project automates regression testing for core REST API endpoints using Java, TestNG, and RestAssured.
+This project automates regression testing for core REST API endpoints using Java, TestNG, and RestAssured
 
 ---
 
