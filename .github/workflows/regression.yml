@@ -7,13 +7,19 @@ on:
 
   workflow_dispatch:
 
+# 1. Added permissions block for GitHub Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4 # Reverted to v4 for stable pages setup
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -27,7 +33,24 @@ jobs:
 
       - name: Upload Extent Report
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v4 # Kept at v4 to match upload-pages requirements
         with:
           name: ExtentReport
           path: test-output/
+
+      # 2. Added steps to host the report live
+      - name: Setup Pages
+        if: always()
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact for deployment
+        if: always()
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # This points to the folder containing your HTML report
+          path: 'test-output/' 
+
+      - name: Deploy to GitHub Pages
+        if: always()
+        id: deployment
+        uses: actions/deploy-pages@v4
