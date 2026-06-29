@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-API_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -151,21 +151,6 @@
           <div class="suite-API_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.GetPlaceTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyGetPlace">
-                  </a> <!-- verifyGetPlace -->
-                  <span class="method-name">verifyGetPlace</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-API_suite-class-passed -->
-          <div class="suite-API_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">tests.DeletePlaceTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -174,6 +159,21 @@
                   <a name="verifyDeletePlace">
                   </a> <!-- verifyDeletePlace -->
                   <span class="method-name">verifyDeletePlace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_suite-class-passed -->
+          <div class="suite-API_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.GetPlaceTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetPlace">
+                  </a> <!-- verifyGetPlace -->
+                  <span class="method-name">verifyGetPlace</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -203,15 +203,19 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;API suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Add, Get ,Update and Delete Place Tests&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;API suite&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Add and Get Place Tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.AddPlaceTests&quot;/&gt;
       &lt;class name=&quot;tests.GetPlaceTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add and Get Place Tests --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Update and Delete Place Tests&quot;&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;tests.UpdatePlaceTests&quot;/&gt;
       &lt;class name=&quot;tests.DeletePlaceTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Add, Get ,Update and Delete Place Tests --&gt;
+  &lt;/test&gt; &lt;!-- Update and Delete Place Tests --&gt;
 &lt;/suite&gt; &lt;!-- API suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -223,7 +227,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Add, Get ,Update and Delete Place Tests (4 classes)</span>
+                <span class="test-name">Add and Get Place Tests (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Update and Delete Place Tests (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -253,24 +260,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyUpdatePlace')
 data.setCell(0, 2, 'tests.UpdatePlaceTests')
-data.setCell(0, 3, 3763);
+data.setCell(0, 3, 6773);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyDeletePlace')
-data.setCell(1, 2, 'tests.DeletePlaceTests')
-data.setCell(1, 3, 3421);
+data.setCell(1, 1, 'verifyGetPlace')
+data.setCell(1, 2, 'tests.GetPlaceTests')
+data.setCell(1, 3, 4656);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyGetPlace')
-data.setCell(2, 2, 'tests.GetPlaceTests')
-data.setCell(2, 3, 2203);
+data.setCell(2, 1, 'verifyDeletePlace')
+data.setCell(2, 2, 'tests.DeletePlaceTests')
+data.setCell(2, 3, 3501);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyAddPlace')
 data.setCell(3, 2, 'tests.AddPlaceTests')
-data.setCell(3, 3, 2070);
+data.setCell(3, 3, 2168);
 window.suiteTableData['API_suite']= { tableData: data, tableDiv: 'times-div-API_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-API_suite">
               </div> <!-- times-div-API_suite -->
             </div> <!-- times-div -->
@@ -285,15 +292,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-API_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.DeletePlaceTests</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
                 <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -306,15 +313,6 @@ return data;
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.UpdatePlaceTests</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-API_suite" class="panel">
@@ -323,74 +321,83 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.AddPlaceTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.UpdatePlaceTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AddPlaceTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void tests.AddPlaceTests.verifyAddPlace())</span>
-                <span class="method-start">255 ms</span>
+                <span class="method-start">265 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAddPlace</span>
-                <span class="method-start">262 ms</span>
+                <span class="method-start">272 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">2335 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.GetPlaceTests</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyGetPlace</span>
-                <span class="method-start">2339 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void tests.GetPlaceTests.verifyGetPlace())</span>
-                <span class="method-start">2339 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">4544 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UpdatePlaceTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void tests.UpdatePlaceTests.verifyUpdatePlace(java.lang.String,java.lang.String))</span>
-                <span class="method-start">5071 ms</span>
+                <span class="method-start">942 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUpdatePlace(67 block, USA, qaclick123)</span>
-                <span class="method-start">5072 ms</span>
+                <span class="method-start">943 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AddPlaceTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">2444 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.GetPlaceTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void tests.GetPlaceTests.verifyGetPlace())</span>
+                <span class="method-start">2445 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyGetPlace</span>
+                <span class="method-start">2446 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">8836 ms</span>
+                <span class="method-start">7105 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UpdatePlaceTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">7717 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.DeletePlaceTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void tests.DeletePlaceTests.verifyDeletePlace())</span>
-                <span class="method-start">8837 ms</span>
+                <span class="method-start">7718 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyDeletePlace</span>
-                <span class="method-start">8838 ms</span>
+                <span class="method-start">7718 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">12261 ms</span>
+                <span class="method-start">11221 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.AddPlaceTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.UpdatePlaceTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">12293 ms</span>
+                <span class="method-start">11229 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

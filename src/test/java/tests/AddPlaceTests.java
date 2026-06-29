@@ -1,13 +1,12 @@
 package tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
 import client.PlaceApiClient;
-
-import payloads.response.AddPlaceResponse;
+import io.restassured.response.Response;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 @Listeners(listeners.TestListeners.class)
 public class AddPlaceTests extends BaseTest {
@@ -16,10 +15,12 @@ public class AddPlaceTests extends BaseTest {
 
     public void verifyAddPlace(){
 
-        AddPlaceResponse response =
-                PlaceApiClient.addPlaceAsObject();
-
-        Assert.assertEquals(response.getStatus(),"OK");
+        Response response =
+                PlaceApiClient.addPlace();
+        
+        response.then()
+        .assertThat()
+        .body(matchesJsonSchemaInClasspath("schemas/AddPlaceSchema.json"));
 
     }
 
