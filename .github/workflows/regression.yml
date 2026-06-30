@@ -1,28 +1,24 @@
 name: RestAssured API Automation CI
 
+# Controls when the workflow will run
 on:
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write      # Gives official permission to host HTML data
-  id-token: write   # Secure token required for native hosting
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
 jobs:
   test:
     name: Execute API Tests
-    # Security Rule: Only run if a human updates the code, completely blocking bot loops
-    if: ${{ github.actor != 'github-actions[bot]' }}
     runs-on: ubuntu-latest
 
     steps:
+    # Step 1: Checkout the code from your repository
     - name: Checkout Repository
       uses: actions/checkout@v4
 
+    # Step 2: Set up Java 17 environment
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
@@ -30,18 +26,15 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
+    # Step 3: Run the RestAssured tests using Maven
     - name: Run Tests with Maven
       run: mvn clean test
 
-    # Official GitHub Action: Uploads the directory as a static artifact securely
-    - name: Upload Pages Artifact
-      if: always()
-      uses: actions/upload-pages-artifact@v3
+    # Step 4: Archive Extent Reports so they can be downloaded after the run
+    - name: Upload Test Reports Artifact
+      if: always() # This ensures reports are uploaded even if tests fail
+      uses: actions/upload-artifact@v4
       with:
-        path: ./reports
-
-    # Official GitHub Action: Publishes your pages data without creating git commit history loops
-    - name: Deploy to GitHub Pages
-      if: always()
-      id: deployment
-      uses: actions/deploy-pages@v4
+        name: Extent-Test-Reports
+        path: reports/
+        retention-days: 30
