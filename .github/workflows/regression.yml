@@ -8,11 +8,15 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write      # Gives official permission to host HTML data
+  id-token: write   # Secure token required for native hosting
 
 jobs:
   test:
     name: Execute API Tests
+    # Security Rule: Only run if a human updates the code, completely blocking bot loops
+    if: ${{ github.actor != 'github-actions[bot]' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -29,19 +33,15 @@ jobs:
     - name: Run Tests with Maven
       run: mvn clean test
 
-    - name: Upload Test Reports Artifact
+    # Official GitHub Action: Uploads the directory as a static artifact securely
+    - name: Upload Pages Artifact
       if: always()
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-pages-artifact@v3
       with:
-        name: Extent-Test-Reports
-        path: reports/
-        retention-days: 30
+        path: ./reports
 
-    # Clean Deployment: Commits report data safely without looping back
-    - name: Deploy Report to GitHub Pages
+    # Official GitHub Action: Publishes your pages data without creating git commit history loops
+    - name: Deploy to GitHub Pages
       if: always()
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./reports
-        force_orphan: true  # Keeps history clean and prevents re-trigger loops
+      id: deployment
+      uses: actions/deploy-pages@v4
