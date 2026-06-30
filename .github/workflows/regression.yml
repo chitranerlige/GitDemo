@@ -3,12 +3,18 @@ name: RestAssured API Automation CI
 on:
   push:
     branches: [ "master" ]
+    paths-ignore:
+      - '.github/**'     # Prevents the deployment commit from re-triggering the test
+      - 'README.md'      # Optional: Stops builds if you are just editing documentation
   pull_request:
     branches: [ "master" ]
+    paths-ignore:
+      - '.github/**'
+      - 'README.md'
   workflow_dispatch:
 
 permissions:
-  contents: write # Crucial permission required to publish to GitHub Pages
+  contents: write
 
 jobs:
   test:
@@ -37,7 +43,6 @@ jobs:
         path: reports/
         retention-days: 30
 
-    # New Step: Automatically publish HTML report to gh-pages branch
     - name: Deploy Report to GitHub Pages
       if: always()
       uses: peaceiris/actions-gh-pages@v4
