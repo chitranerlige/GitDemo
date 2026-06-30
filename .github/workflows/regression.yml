@@ -3,14 +3,8 @@ name: RestAssured API Automation CI
 on:
   push:
     branches: [ "master" ]
-    paths-ignore:
-      - '.github/**'     # Prevents the deployment commit from re-triggering the test
-      - 'README.md'      # Optional: Stops builds if you are just editing documentation
   pull_request:
     branches: [ "master" ]
-    paths-ignore:
-      - '.github/**'
-      - 'README.md'
   workflow_dispatch:
 
 permissions:
@@ -43,9 +37,11 @@ jobs:
         path: reports/
         retention-days: 30
 
+    # Clean Deployment: Commits report data safely without looping back
     - name: Deploy Report to GitHub Pages
       if: always()
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./reports
+        force_orphan: true  # Keeps history clean and prevents re-trigger loops
